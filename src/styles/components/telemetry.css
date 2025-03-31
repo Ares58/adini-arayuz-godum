@@ -79,3 +79,14 @@
     max-height: calc(50vh - 30px);
   }
 }
+.video-canvas {
+  display: block;
+  background-color: black;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.video-stream-container {
+  position: relative;
+  width: 100%;
+}

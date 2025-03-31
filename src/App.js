@@ -2,7 +2,7 @@
 import Navbar from "./Navbar";
 import Yonetim from "./pages/Yonetim";
 import Iletisim from "./pages/Iletisim";
-import Telemetry from "./pages/Telemetry"; // Telemetry sayfasını import ediyoruz
+import Telemetry from "./pages/Telemetry";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -19,5 +19,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

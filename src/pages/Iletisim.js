@@ -10,7 +10,7 @@ function Iletisim() {
   useEffect(() => {
     const connectWebSocket = () => {
       console.log("WebSocket bağlantısı başlatılıyor...");
-      socketRef.current = new WebSocket("ws://localhost:8765");
+      socketRef.current = new WebSocket("ws://localhost:5004");
 
       socketRef.current.onopen = () => {
         console.log("WebSocket bağlantısı başarılı!");
@@ -19,13 +19,13 @@ function Iletisim() {
 
       socketRef.current.onerror = (error) => {
         console.error("WebSocket bağlantı hatası:", error);
-        setTimeout(connectWebSocket, 5000); // 5 saniye sonra yeniden dene
+        setTimeout(connectWebSocket, 5004); // 5 saniye sonra yeniden dene
       };
 
       socketRef.current.onclose = () => {
         console.log("WebSocket bağlantısı kapandı.");
         setIsConnected(false);
-        setTimeout(connectWebSocket, 5000); // Bağlantı kesildiğinde yeniden dene
+        setTimeout(connectWebSocket, 5004); // Bağlantı kesildiğinde yeniden dene
       };
 
       socketRef.current.onmessage = (event) => {
