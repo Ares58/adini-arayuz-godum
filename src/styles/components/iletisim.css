@@ -1,0 +1,26 @@
+.video-container {
+  text-align: center;
+  margin: 20px 3px 0;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  background-color: #000;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  canvas {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  canvas {
+    width: 66%;
+    height: 550px;
+  }
+}
